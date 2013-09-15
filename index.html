@@ -16,12 +16,16 @@
 		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" href="css/local.css" />
+		<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
+ <!--[if lte IE 8]>
+     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
+ <![endif]-->
 	</head>
 
 	<body>
 		<nav>
 
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -29,25 +33,28 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Philly GLAM Hack</a>
+          <a class="navbar-brand" href="#">GLAM Hack Philly</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
+            	<a href="#about" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+            	 <ul class="dropdown-menu">
+                  <li><a href="#"></a></li>
+                  <li><a href="#what">What is GLAM Hack?</a></li>
+                  <li><a href="#who">Who should attend?</a></li>
+                  <li><a href="#coc">Code of Conduct</a></li>
+                  <li class="divider"></li>
+                  <li class="dropdown-header">Logistics</li>
+                  <li><a href="#where&when">Where &amp; When?</a></li>
+                  <li><a href="#schedule">Schedule</a></li>
+                 </ul>
             </li>
+            <li><a href="#data">Resources &amp; Data</a></li>
+            <li><a href="#challenges">Challenges</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#sponsors">Sponsors</a></li>
+            <li><a href="http://glamhack.eventbrite.com"><i>Register</i></a></li>
           </ul>
         </div><!--/.navbar-collapse -->
       </div>
@@ -56,9 +63,10 @@
 
         <div class="jumbotron">
       <div class="container">
-        <h1>Philly GLAM Hack</h1>
-        <p>A hackathon for open data from Galleries, Libaries, Archives, &amp; Museums. </p>
-        <p><a class="btn btn-primary btn-lg" >Learn more &raquo;</a></p>
+        <h1>GLAM Hack Philly</h1>
+        <p>A Galleries, Libaries, Archives, &amp; Museums Data Hackathon</p>
+        <p>November 9th</p>
+        <p><a class="btn btn-primary btn-lg" href="http://glamhack.eventbrite.com">Register for free</a></p>
       </div>
     </div>
 
@@ -66,29 +74,121 @@
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-lg-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+          <h2>What is it?</h2>
+          <p>A hackathon focused on building apps with data from Galleries, Libraries, Archives &amp; Museums. </p>
+          <p><a class="btn btn-default" href="#what">More What &raquo;</a></p>
         </div>
         <div class="col-lg-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+          <h2>Where</h2>
+          <p>
+          	<address>
+          	Special Collections Center<br />
+          	Van Pelt-Dietrich Library Center, 6th floor<br/>
+            3420 Walnut Street, Philadelphia, PA 19104
+            </address>
+          </p>
+          <p><a class="btn btn-default" href="#where&when">On a Map &raquo;</a></p>
        </div>
         <div class="col-lg-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <h2>Who should attend?</h2>
+          <p>You! </p>
           <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
         </div>
       </div>
 
       <hr>
+      <a name="what"></a>
+      <div class="section">
+      	<h2>What is GLAM Hack Philly?</h2>
+      	<p>A chance for for peope to get togeterh to build apps with data from Galleries, Libaries, Archives and Museums. </p>
+	  </div>
+	  
+	  <hr>
+      <a name="who"></a>
+      <div class="section">
+      	<h2>Who should attend?</h2>
+      	<p><b>Everyone</b> is encouraged to participate in the hackathon. Even if you don't cosider yourself a "coder" your ideas and contributions
+      		are welcome. </p>
+	  </div>
+	  
+	  	  <hr>
+      <a name="where&when"></a>
+      <div class="section">
+      	<h2>Where &amp; When?</h2>
+      	<p>
+      		<dl>
+      			<dt>When</dt>
+      			<dd>November 9th from 8:30AM - 6:30PM. Full schedule to follow.</dd>
+      		    <dt>Where</dt>
+      		    <dd>
+      		    	<address>
+      			The Kislak Center for Special Collections, Rare Books and Manuscripts<br />
+      			Van Pelt-Dietrich Library Center, 6th floor <br />
+                3420 Walnut Street, Philadelphia, PA 19104 <br />
+      		</address>
+      		    </dd>
+      		</dl>
+      		<div id="map">
+      			
+      		</div>
+      		
+      	</p>
+	  </div>
+	  
+    <hr>
+      <a name="data"></a>
+      <div class="section">
+      	<h2>Resources and Data</h2>
+      	    <p>
+      	    	<ul>
+      	    		<li><a href="http://www.opendataphilly.org/opendata/tag/1/?sort=rating_score">Open Data Philly Arts/Culture/History</a></li>
+      	    		<li><a href="http://dp.la/info/developers/codex/">Digital Public Library of America API</a></li>
+      	    	</ul>
+      	    </p>
+	  </div>
 
+	  	  <hr>
+      <a name="challenges"></a>
+      <div class="section">
+      	<h2>Challenges</h2>
+      	<p>
+      		A few orgniatiosn have sponsored challenges that the would like to see happen with their data.
+      		
+      	</p>
+	  </div>
+
+
+	  	  <hr>
+      <a name="contact"></a>
+      <div class="section">
+      	<h2>Got questions?</h2>
+      	<p>
+      		Here's how to get a hold of us.
+      	</p>
+	  </div>
+	  
+	  	  	  <hr>
+      <a name="sponsors"></a>
+      <div class="section">
+      	<h2>Huge thanks to all our sponsors</h2>
+      	<p>
+      		Images of sponsrs go here.
+      	</p>
+	  </div>
+
+	  
+	  
       <footer>
-        <p>&copy; Company 2013</p>
+        <p>GLAM Hack Philly 2013</p>
       </footer>
     </div>
-        <script src-"//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="//code.jquery.com/jquery.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+		<script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+		<script>
+			var map = L.map('map').setView([39.9496,-75.1959], 15);
+			 L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {maxZoom: 22}).addTo(map);
+			 var marker = L.marker([39.94965,-75.19593]).bindPopup('<b>Van Pelt Library</b><br />3420 Walnut Street<br /> Philadelphia, PA 19104<br /><a href="http://www.library.upenn.edu/">Penn Library</a>').addTo(map).openPopup();
+		</script>
 	</body>
 </html>

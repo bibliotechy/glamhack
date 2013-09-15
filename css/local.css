@@ -1,0 +1,11 @@
+/* Local CSS */
+
+#map {
+	height: 200px;
+	width: 100%;
+}
+
+.section {
+	min-height: 300px;
+	padding-top: 45px;
+}
