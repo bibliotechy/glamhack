@@ -55,6 +55,9 @@
   <div ng-view></div>
 
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+  if (typeof angualr == 'undefined'){
+    document.write(unescape("%3Cscript src='/lib/angular/angualr.min.js' type='text/javascript'%3E%3C/script%3E"));
+  }
   <script src="js/app.js"></script>
   <script src="js/controllers.js"></script>
   <script src="//code.jquery.com/jquery.js"></script>
