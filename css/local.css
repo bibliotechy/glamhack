@@ -5,10 +5,15 @@
 	width: 100%;
 }
 
-.section {
+.page {
 	padding-top: 45px;
+}
+
+.page p {
+ font-size: 1.3em;
 }
 
 .fp-text {
 	height : 150px;
 }
+
